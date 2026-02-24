@@ -4,6 +4,22 @@ from datetime import datetime
 import math
 import os
 
+# --- CONFIGURAÇÃO DE METADADOS (PREVIEW WHATSAPP/GOOGLE) ---
+st.markdown(f"""
+    <style>
+        /* Este bloco ajuda os indexadores a lerem os metadados */
+    </style>
+    <head>
+        <title>RigX Pro - Studio A Eventos</title>
+        <meta name="description" content="Calculadora Estrutural e Laudos para Box Truss - Studio A">
+        <meta property="og:title" content="RigX Pro - Studio A Eventos">
+        <meta property="og:description" content="Sistema Profissional de Cálculo de Carga e Segurança para Eventos.">
+        <meta property="og:image" content="https://raw.githubusercontent.com">
+        <meta property="og:url" content="https://rigx-studioa.streamlit.app">
+        <meta property="og:type" content="website">
+    </head>
+""", unsafe_allow_html=True)
+
 # --- CONFIGURAÇÃO DE METADADOS PARA WHATSAPP ---
 st.markdown(f"""
     <head>
@@ -157,5 +173,6 @@ else:
     st.info("💡 Por favor, preencha o Nome do Evento e a O.S. para habilitar o Laudo PDF.")
 
 st.markdown(f'<div style="text-align: center; color: {text_color}; font-size: 10px; margin-top: 30px;">© 2024 STUDIO A EVENTOS | www.studioaeventos.com.br</div>', unsafe_allow_html=True)
+
 
 
