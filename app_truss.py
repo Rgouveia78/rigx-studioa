@@ -4,6 +4,15 @@ from datetime import datetime
 import math
 import os
 
+# --- CONFIGURAÇÃO DE METADADOS PARA WHATSAPP ---
+st.markdown(f"""
+    <head>
+        <meta property="og:title" content="RigX Pro - Studio A Eventos" />
+        <meta property="og:description" content="Calculadora de Carga Estrutural e Gerador de Laudos para Box Truss." />
+        <meta property="og:image" content="https://raw.githubusercontent.com" />
+        <meta property="og:url" content="https://rigx-studioa.streamlit.app" />
+    </head>
+""", unsafe_allow_html=True)
 # --- 1. CONFIGURAÇÃO DE UI E SELETOR DE TEMA ---
 st.set_page_config(page_title="RigX Pro - Studio A", page_icon="🏗️", layout="centered")
 
@@ -147,3 +156,4 @@ else:
     st.info("💡 Por favor, preencha o Nome do Evento e a O.S. para habilitar o Laudo PDF.")
 
 st.markdown(f'<div style="text-align: center; color: {text_color}; font-size: 10px; margin-top: 30px;">© 2024 STUDIO A EVENTOS | www.studioaeventos.com.br</div>', unsafe_allow_html=True)
+
